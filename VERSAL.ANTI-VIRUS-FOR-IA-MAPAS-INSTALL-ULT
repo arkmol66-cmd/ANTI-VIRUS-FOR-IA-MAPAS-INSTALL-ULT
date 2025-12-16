@@ -1,0 +1,35 @@
+{
+<namesapf:anti-virus-for-mapas-ia-versao>{
+"versao-linux":not-lasis  goto versao-linux --versão ou app não lançado para linux 
+"versao-mac":not-lasis    goto versao-mac   --versão ou app não lançado para mac 
+"versao-windows":1.0 goto versao-windows
+}
+<namesapf:anti-virus-for-mapas-ia-versao-falas>{
+#versao-linux
+int: versao-linux = "not"{
+println: linux
+println: versão não lançada!
+println: procuramdo versão compativel para seu computador
+}else{
+  println: linux
+println: procuramdo versão compativel para seu computador
+println: versao lançada mais em pervia 
+}
+  #versao-mac
+int: versao-mac = "not"{
+println: mac
+println: versão não lançada!
+println: procuramdo versão compativel para seu computador
+}else{
+  println: mac
+println: procuramdo versão compativel para seu computador
+println: versao lançada
+}
+  #versao-windows
+int: versao-windows = "yes"{
+println: versao lançada 
+}
+}
+-- start versao-linux 
+-- start versao-mac
+-- start versao-windows
